@@ -1,7 +1,5 @@
 # mod-camps-twow / TurtleCamps
 
-![TurtleCamps Banner](docs/images/turtle_camps_banner.jpg)
-
 A standalone decorative camp and GM world editor for the Tortoise Turtle 1.18.1 (build 7272) core. Open `/tc`, search safe props, buildings, creatures, or items, preview them in the world, move/raise/rotate/snap them, and Save. Manage account camps, adjust territory size, toggle public/private visibility, or force delete spawns anytime.
 
 **Status:** Implementation compiles and `mangosd` links cleanly on Windows x64 Release. Full protocol tests (10,042 assertions + 10,000 fuzz checks) and static verification pass.
@@ -36,10 +34,7 @@ existing PlayerBots settings. Then build `mangosd`, not just `modules`:
 cmake --build "<build-directory>" --config Release --target mangosd --parallel 8
 ```
 
-The exact verified configuration and output are in [build-and-test.md](docs/build-and-test.md).
 No installation/deployment or live SQL application was performed by this project.
-The standalone directory currently has no Git metadata; initialize/version it
-according to your own repository workflow.
 
 ## Database and configuration
 1. Back up the world database. Review native table engines and the optional manual
@@ -112,13 +107,13 @@ Use the UI normally. Raw diagnostics (each request ID increases):
 RELOAD requires SEC_ADMINISTRATOR and reloads the manager from the **currently
 loaded** sConfig values and catalogue tables; it does not reread config files itself.
 Use the core's config reload to reread files; its hook then reloads camps. Reconnect
-the addon afterwards. [protocol.md](docs/protocol.md) defines all commands.
+the addon afterwards.
 
 ## Safety, limitations and troubleshooting
 Only verified generic decorative templates pass admission; overrides cannot enable
 doors, chests, spell foci, transports, scripted or quest templates. Catalogue
 categories describe appearance and never grant permission. Some visual props may
-therefore not appear. See [catalogue-safety.md](docs/catalogue-safety.md).
+therefore not appear.
 
 No modified executable, raycast, direct world dragging, transform gizmo, personal
 phasing, arbitrary scale, bank/crafting interaction or PlayerBot gathering exists.
@@ -152,12 +147,7 @@ ownership tables before accounting for every native spawn. Remove the addon and
 SavedVariables only after preserving desired favorites. No automatic purge script
 is supplied.
 
-## Project map and credits
-[Architecture](ARCHITECTURE.md), [source identity](docs/references/REFERENCE_SOURCES.md),
-[manual tests](docs/manual-test-plan.md), [compatibility](docs/compatibility.md),
-[project guidance](AGENTS.md), and reusable workflows in `skills/`.
-
+## Credits and license
 Original implementation follows the target's GPL native API patterns. Camp concepts
 reference WOW Legends; browsing/authoring concepts reference MangosSuperUI; editor
-state concepts reference MSUIClient. No AGPL server code is copied. See
-[THIRD_PARTY.md](docs/THIRD_PARTY.md) and LICENSE.
+state concepts reference MSUIClient. No AGPL server code is copied. See LICENSE.
