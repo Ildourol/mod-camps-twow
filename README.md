@@ -1,5 +1,7 @@
 # mod-camps-twow / TurtleCamps
 
+![TurtleCamps Banner](docs/images/turtle_camps_banner.jpg)
+
 A standalone decorative camp and GM world editor for the Tortoise Turtle 1.18.1 (build 7272) core. Open `/tc`, search safe props, buildings, creatures, or items, preview them in the world, move/raise/rotate/snap them, and Save. Manage account camps, adjust territory size, toggle public/private visibility, or force delete spawns anytime.
 
 **Status:** Implementation compiles and `mangosd` links cleanly on Windows x64 Release. Full protocol tests (10,042 assertions + 10,000 fuzz checks) and static verification pass.
