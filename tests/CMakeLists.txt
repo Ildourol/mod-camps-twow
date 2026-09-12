@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project(CampsProtocolTests LANGUAGES CXX)
+enable_testing()
+add_executable(camps_protocol_tests protocol_tests.cpp ../src/CampsProtocol.cpp)
+target_compile_features(camps_protocol_tests PRIVATE cxx_std_14)
+add_test(NAME protocol COMMAND camps_protocol_tests)

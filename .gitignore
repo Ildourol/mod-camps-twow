@@ -1,0 +1,23 @@
+# Build artifacts and binaries
+build*/
+bin/
+*.obj
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.lib
+*.a
+*.exp
+
+# IDE and Editor files
+.vs/
+.vscode/
+*.user
+*.suo
+*.VC.db
+
+# OS files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store

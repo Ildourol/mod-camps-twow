@@ -1,0 +1,41 @@
+<Bindings>
+    <Binding name="TURTLECAMPS_TOGGLE" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Toggle()
+    </Binding>
+    <Binding name="TURTLECAMPS_SAVE" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Save()
+    </Binding>
+    <Binding name="TURTLECAMPS_CANCEL" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Cancel()
+    </Binding>
+    <Binding name="TURTLECAMPS_GROUND" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Ground()
+    </Binding>
+    <Binding name="TURTLECAMPS_UNDO" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Undo()
+    </Binding>
+    <Binding name="TURTLECAMPS_FORWARD" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Delta(1, 0, 0, 0)
+    </Binding>
+    <Binding name="TURTLECAMPS_BACK" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Delta(-1, 0, 0, 0)
+    </Binding>
+    <Binding name="TURTLECAMPS_LEFT" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Delta(0, 1, 0, 0)
+    </Binding>
+    <Binding name="TURTLECAMPS_RIGHT" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Delta(0, -1, 0, 0)
+    </Binding>
+    <Binding name="TURTLECAMPS_RAISE" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Delta(0, 0, 1, 0)
+    </Binding>
+    <Binding name="TURTLECAMPS_LOWER" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Delta(0, 0, -1, 0)
+    </Binding>
+    <Binding name="TURTLECAMPS_YAW_LEFT" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Delta(0, 0, 0, 0.261799)
+    </Binding>
+    <Binding name="TURTLECAMPS_YAW_RIGHT" runOnUp="false" category="BINDING_HEADER_TURTLECAMPS">
+        TurtleCamps_Delta(0, 0, 0, -0.261799)
+    </Binding>
+</Bindings>

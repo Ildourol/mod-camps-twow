@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: TurtleCamps
+## Notes: Server-authoritative camp and decorative world editor for Turtle 1.18.1.
+## Author: mod-camps-twow contributors
+## Version: 0.3.0
+## SavedVariables: TurtleCampsDB
+Bindings.xml
+TurtleCampsModels.lua
+TurtleCamps.lua

@@ -1,0 +1,15 @@
+[ModuleConf]
+# Opt in after applying world migration and reviewing the catalogue.
+Camps.Enable = 0
+Camps.Players = 0
+Camps.Visits = 0
+Camps.PropCap = 100
+Camps.Radius = 40
+Camps.MinimumSpacing = 100
+Camps.EditTimeoutSeconds = 120
+Camps.TravelCooldownSeconds = 60
+# Comma-separated native IDs, at most 64 per list; blank disables the blacklist.
+# Normal-player building already restricts maps to continents 0 and 1.
+Camps.ForbiddenMaps = ""
+Camps.ForbiddenZones = ""
+Camps.ForbiddenAreas = ""
